@@ -1,0 +1,27 @@
+Messages:
+  NoHearthBan: '&cYou have been killed by %killer% and you have no hearths now! You are has been banned FOREVER.'
+  LostHearths: '&cYou have been killed by %killer% and you lost %hearths% hearth(s)'
+  HearthAdded: '&aYou have killed %player% and been added %hearths% hearth(s). Keep going!'
+  LimitReached: '&cYou have killed %player%, he lost %hearths% hearth(s), but you havent got %hearths% hearth(s)'
+  MaxHearthsExecuted: '&aYou have recovered all your hearths and now you got 10 hearths!'
+  MaxHearthsExecutedByOtherPlayer: '&aYou have recovered all your hearths and now you got 10 hearths by %player%!'
+  WithdrawHearthsExecuted: '&aYou have successfully withdrawed %amount% heart(s)!'
+  RecoveredHearth: '&aYou have recovered +%amount% hearth(s)!'
+  
+HearthLimit:
+  # 2 = One hearth
+  Limit: 40
+  Enabled: false
+MobsStealHearths: true
+AddedHearths: 2 # 2 = One hearth  
+
+Commands:
+  maxhearths:
+    Enabled: true
+  withdrawhearths:
+    Enabled: true
+    Item:
+      Name: "&c&lHEARTH"
+      Item: "NETHER_STAR"
+      Description:
+      - "&cRight Click to get a hearth"  

@@ -1,0 +1,40 @@
+name: WolfLifeSteal
+version: 1.0.0.BETA
+main: wolflifesteal.hahoos.pl.Main
+author: HAHOOS
+website: https://hahoos.pl/
+prefix: WolfLifeSteal
+
+commands:
+  maxhearths:
+    aliases: [max, resetHearths]
+    description: Return your hearts to max
+    permission: wolflifesteal.commands.maxhearths
+    permission-message: You do not have permission to use this command.
+    usage: "Usage /<command> [player]"
+  withdrawhearts:
+    description: Transfer hearts to item to give other players more hearths!
+    permission: wolflifesteal.commands.withdrawhearts
+    permission-message: You do not have permission to use this command.
+    usage: "Usage /<command> [amount]"
+    
+permissions:
+  wolflifesteal.commands.maxhealth:
+    description: "Permission to use /maxhearths"
+    default: op
+  wolflifesteal.commands.withdrawhearts:
+    description: "Permission to use /withdrawhearts"
+    default: true
+  wolflifesteal.commands.*:
+    description: "Permission to use all commands"
+    default: op
+    children:
+      wolflifesteal.commands.maxhearths: true
+      wolflifesteal.commands.withdrawhearths: true
+  wolflifesteal.*:
+    description: "Grants permission to all permissions in plugin"
+    default: op
+    children:
+      wolflifesteal.commands.maxhearths: true
+      wolflifesteal.commands.withdrawhearths: true
+      wolflifesteal.commands.*: true        
