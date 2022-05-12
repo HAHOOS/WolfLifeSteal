@@ -18,3 +18,27 @@ Want your server to be interesting? With this plugin you can make your survival 
 - Hearth Steal Limit
 
 - Customizable number of hearths being added/lost
+
+## Commands
+
+<> - required
+() - optional
+
+/maxhearths (player) - Reset your hearths to default(10 hearths)
+
+/withdrawhearths <amount> - Makes your hearths into item that you can give other players to give them hearths!
+
+## Permissions
+
+- wolflifesteal.commands.maxhearths:
+  - Description - Permission to use /maxhearths
+  - Default - OP
+- wolflifesteal.commands.withdrawhearts:
+  - Description - Permission to use /withdrawhearts
+  - Default - Normal Users
+- wolflifesteal.commands.*:
+  - Description - Permission to use all commands
+  - Default - OP
+- wolflifesteal.*:
+  - Description - Grants permission to all permissions in plugin
+  - Default - OP
